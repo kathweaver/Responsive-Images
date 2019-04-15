@@ -11,9 +11,41 @@ New images will be found in the images directory
 
 HTML for images:
 
+<figure>
  <picture>
     <source media="(min-width: 650px)" srcset="images/austin-medium.jpg">
     <source media="(min-width: 465px)" srcset="images/austin-small.jpg">
     <img src="images/austin-large.jpg" alt="Floss and Brach" style="width:auto;">
  </picture>
+ <figcaption>
+ </figcaption>
+</figure>
+
+CSS:
+
+figure {
+  margin: .25em;
+  padding: 0;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+figure img {
+  display: block;
+  max-width:100%;
+  margin: auto;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  text-align: center;
+  color: #C3C3E5;
+}
+
+
 
